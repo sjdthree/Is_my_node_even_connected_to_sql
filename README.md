@@ -1,6 +1,8 @@
 # Is_my_node_even_connected_to_sql
 Running Node.js -- but first, how do I even know, through the thicket of proxy and db logins, that i'm even connected?
 
+Clone and run this repo to get your configuration right.  Then get on with node, react, cors, etc. etc.
+
 # SETUP
 
 clone the repo
@@ -18,3 +20,9 @@ It runs once and simply a) tries to connect to your postgres db.
 then runs a "SELECT NOW()" command to fully check that you are connected, have permissions, have the right table name and can receive data back.
 
 See app.js comments for more details.
+
+
+REFERENCES:
+
+See lots more details here:
+https://node-postgres.com/features/connecting
