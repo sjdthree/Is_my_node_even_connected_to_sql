@@ -11,8 +11,8 @@ const pool = new Pool({
   port: process.env.PORT,
   host: process.env.HOST,
   ssl: {
-    rejectUnauthorized: true,
-    ca: fs.readFileSync('ca-certificate.crt').toString(), // make sure to drag the ca file into the same parent folder as this script
+    rejectUnauthorized: false,
+    // ca: fs.readFileSync('ca-certificate.crt').toString(), // make sure to drag the ca file into the same parent folder as this script
   }
 });
 
